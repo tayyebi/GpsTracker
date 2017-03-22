@@ -1,0 +1,24 @@
+﻿@import url('Table.css');
+body {
+    margin:0 ;
+    padding:0;
+}
+form{
+    width:50%;
+    margin:1em auto 1em auto;
+}
+.Menu{
+    display:block;
+    background-color:#0072ff;
+    text-align:center;
+
+}
+.Menu a {
+    display:inline-block;
+    margin:1em;
+    padding:1em;
+    text-decoration:none;
+    color:#ffffff;
+    background-color:#131a23;
+    border-radius:1em;
+}

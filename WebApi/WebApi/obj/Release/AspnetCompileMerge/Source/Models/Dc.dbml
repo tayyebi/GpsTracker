@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Db" Class="DcDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Db.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GroupA_Positions" Member="GroupA_Positions">
+    <Type Name="GroupA_Position">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="GroupB_PositionId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="GroupB_Position_GroupA_Position" Member="GroupB_Position" ThisKey="GroupB_PositionId" OtherKey="Id" Type="GroupB_Position" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GroupB_Zones" Member="GroupB_Zones">
+    <Type Name="GroupB_Zone">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="GroupB_Zone_GroupB_Position" Member="GroupB_Positions" ThisKey="Id" OtherKey="ZoneId" Type="GroupB_Position" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GroupB_Positions" Member="GroupB_Positions">
+    <Type Name="GroupB_Position">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ZoneId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="GroupB_Position_GroupA_Position" Member="GroupA_Positions" ThisKey="Id" OtherKey="GroupB_PositionId" Type="GroupA_Position" />
+      <Association Name="GroupB_Zone_GroupB_Position" Member="GroupB_Zone" ThisKey="ZoneId" OtherKey="Id" Type="GroupB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

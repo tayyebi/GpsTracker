@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Group B</title>
+    <meta charset="utf-8" />
+    <link href="Main.css" rel="stylesheet" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <link href="foxholder-styles.css" rel="stylesheet" />
+    <script src="foxholder.js"></script>
+</head>
+<body>
+
+    <div class="Menu">
+        <a href="Zones.html">Zones</a>
+        <a href="GroupA.html">Group A</a>
+        <a href="GroupB.html">Group B</a>
+    </div>
+
+    <div class="box-table">
+    </div>
+
+    <script type="text/javascript">
+
+        jQuery('body').foxholder({
+            demo: Math.floor(Math.random() * (15 - 1 + 1) + 1) //or other number of demo (1-15) you want to use
+        });
+
+        function LoadData() {
+
+            var json = (function () {
+                var json = null;
+                $.ajax({
+                    'async': false,
+                    'global': false,
+                    'url': '../api/GroupB',
+                    'dataType': "json",
+                    'success': function (data) {
+                        json = data;
+                    }
+                });
+                return json;
+            })();
+
+            $.makeTable = function (mydata) {
+                var table = $('<table  class="myTable"> ');
+                var tblHeader = "<tr>";
+                for (var k in mydata[0]) tblHeader += "<th>" + k + "</th>";
+                tblHeader += "</tr>";
+                $(tblHeader).appendTo(table);
+                $.each(mydata, function (index, value) {
+                    var TableRow = "<tr>";
+                    $.each(value, function (key, val) {
+                        TableRow += "<td>" + val + "</td>";
+                    });
+                    TableRow += "</tr>";
+                    $(table).append(TableRow);
+                });
+                return ($(table));
+            };
+
+            var table = $.makeTable(json);
+            $(".box-table").html(table);
+            
+
+            $('table').each(function () {
+                var currentPage = 0;
+                var numPerPage = 10;
+                var $table = $(this);
+                $table.bind('repaginate', function () {
+                    $table.find('tr').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
+                });
+                $table.trigger('repaginate');
+                var numRows = $table.find('tr').length;
+                var numPages = Math.ceil(numRows / numPerPage);
+                var $pager = $('<div class="pager"></div>');
+                for (var page = 0; page < numPages; page++) {
+                    $('<span class="page-number"></span>').text(page + 1).bind('click', {
+                        newPage: page
+                    }, function (event) {
+                        currentPage = event.data['newPage'];
+                        $table.trigger('repaginate');
+                        $(this).addClass('active').siblings().removeClass('active');
+                    }).appendTo($pager).addClass('clickable');
+                }
+                $pager.insertBefore($table).find('span.page-number:first').addClass('active');
+            });
+        }
+        LoadData();
+    </script>
+</body>
+</html>

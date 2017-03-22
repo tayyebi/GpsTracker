@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\admin\Desktop\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/23/2016 19:04:40</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>12/03/2016 13:14:16</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>12/03/2016 13:14:15</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.Core.dll">
+      <publishTime>11/30/2016 23:02:25</publishTime>
+    </File>
+    <File Include="bin/Common.Logging.dll">
+      <publishTime>11/30/2016 23:02:28</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/23/2016 19:29:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/23/2016 19:29:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/23/2016 19:04:32</publishTime>
+    </File>
+    <File Include="bin/Quartz.dll">
+      <publishTime>11/30/2016 23:02:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/23/2016 19:04:41</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/23/2016 19:04:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/23/2016 19:04:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/23/2016 19:04:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/23/2016 19:04:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/23/2016 19:04:37</publishTime>
+    </File>
+    <File Include="bin/WebApi.dll">
+      <publishTime>12/03/2016 13:14:07</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/23/2016 19:04:40</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/23/2016 19:04:26</publishTime>
+    </File>
+    <File Include="Models/Dc.dbml">
+      <publishTime>11/30/2016 13:48:53</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/30/2016 23:02:37</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/03/2016 13:14:10</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.ArrayOfInt.datasource">
+      <publishTime>11/30/2016 23:00:32</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.ArrayOfLong.datasource">
+      <publishTime>11/30/2016 23:00:32</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.GetCreditResponse.datasource">
+      <publishTime>11/30/2016 23:00:35</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.GetMessageStatusResponse.datasource">
+      <publishTime>11/30/2016 23:00:34</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.GetReciveMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:35</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.GetUnReciveMessageCountResponse.datasource">
+      <publishTime>11/30/2016 23:00:35</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendCourseMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:34</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendMessageForPhpResponse.datasource">
+      <publishTime>11/30/2016 23:00:33</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:33</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendMessagesWithUDHResponse.datasource">
+      <publishTime>11/30/2016 23:00:33</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendMessageWithUDHResponse.datasource">
+      <publishTime>11/30/2016 23:00:33</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendMultiMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:33</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendOneMessageQuicklyResponse.datasource">
+      <publishTime>11/30/2016 23:00:35</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendOneMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:34</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendSchaduleMessageForPhpResponse.datasource">
+      <publishTime>11/30/2016 23:00:34</publishTime>
+    </File>
+    <File Include="Service References/TestServiceReference/WebApi.TestServiceReference.SendSchaduleMessageResponse.datasource">
+      <publishTime>11/30/2016 23:00:34</publishTime>
+    </File>
+    <File Include="ui/foxholder-styles.css">
+      <publishTime>11/23/2016 23:07:05</publishTime>
+    </File>
+    <File Include="ui/foxholder.js">
+      <publishTime>11/23/2016 23:07:05</publishTime>
+    </File>
+    <File Include="ui/GroupA.html">
+      <publishTime>12/01/2016 01:02:23</publishTime>
+    </File>
+    <File Include="ui/GroupB.html">
+      <publishTime>12/01/2016 01:02:16</publishTime>
+    </File>
+    <File Include="ui/jquery-3.1.1.min.js">
+      <publishTime>11/23/2016 20:03:31</publishTime>
+    </File>
+    <File Include="ui/Main.css">
+      <publishTime>11/23/2016 23:16:21</publishTime>
+    </File>
+    <File Include="ui/Positions.html">
+      <publishTime>11/23/2016 23:17:59</publishTime>
+    </File>
+    <File Include="ui/Responses.html">
+      <publishTime>11/23/2016 23:17:39</publishTime>
+    </File>
+    <File Include="ui/Table.css">
+      <publishTime>11/23/2016 22:58:49</publishTime>
+    </File>
+    <File Include="ui/Zones.html">
+      <publishTime>12/01/2016 01:09:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/01/2016 00:01:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
